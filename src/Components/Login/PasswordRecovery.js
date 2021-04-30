@@ -1,6 +1,6 @@
 import React from "react";
 import {Form, useFormik} from "formik";
-import "../Login/PAsswordRecovery.scss"
+import "../Login/PasswordRecovery.scss"
 import * as Yup from "yup";
 import {TextField} from "@material-ui/core";
 
@@ -26,16 +26,11 @@ const PasswordRecovery = () => {
         touched,
         handleChange,
         handleBlur,
-        handleSubmit,
-        isSubmitting,
-        setFieldValue
     } = formik;
 
     return (
         <>
             <div className="password-recovery-container">
-
-
                 <div className="password-recovery-container">
                     <div className="password-recovery-content">
                         <div className="password-recovery-form">
@@ -55,9 +50,8 @@ const PasswordRecovery = () => {
                                 Մուտքագրեք էլ. հասցեն, որով գրանցվել եք
                             </p>
                             <div className="form-group">
-
                                 <TextField
-                                    lassName="form-input"
+                                    className="form-input"
                                     placeholder="Էլ. հասցե"
                                     type="email"
                                     name="email"

@@ -1,8 +1,6 @@
 import React, {useState} from "react";
-import {Formik} from "formik";
 import * as Yup from "yup";
 import {useFormik} from "formik";
-import {useDispatch, useSelector} from "react-redux";
 import "./style.scss";
 import {TextField, Radio} from "@material-ui/core";
 import ExitToAppTwoToneIcon from '@material-ui/icons/ExitToAppTwoTone';
@@ -49,14 +47,7 @@ const LoginPage = () => {
 
 
     return (
-
         <div className={"mainContainerForm"}>
-            {/*<p>*/}
-            {/*    <span>ՀԱՅ</span>*/}
-            {/*    <span>EN</span>*/}
-            {/*    <span>РУ</span>*/}
-
-            {/*</p>*/}
             <div className="login-registration-area">
                 <div className="login-area">
                     <p className={"styleWelcome"}>Բարի գալուստ Loyalty</p>
@@ -84,24 +75,24 @@ const LoginPage = () => {
                         <p className="error-message">{touched.errorMessage}</p>
                         <div>
 
-                                <LockOutlinedIcon className={"iconStyle"}/>
-                                <TextField
-                                    className={"passStyle"}
-                                    placeholder="Գաղտնաբառ"
-                                    type="password"
-                                    name="password"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.password}
-                                    error={touched.password && errors.password}
-                                    helperText={touched.password && errors.password}
-                                    touched={touched.password}
-                                    errorMessage={errors["password"]}
-                                />
-                                <VisibilityOutlinedIcon style={{
-                                    position: 'absolute',
-                                    right: '25px',
-                                }} className={"iconStyle"}/>
+                            <LockOutlinedIcon className={"iconStyle"}/>
+                            <TextField
+                                className={"passStyle"}
+                                placeholder="Գաղտնաբառ"
+                                type="password"
+                                name="password"
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={values.password}
+                                error={touched.password && errors.password}
+                                helperText={touched.password && errors.password}
+                                touched={touched.password}
+                                errorMessage={errors["password"]}
+                            />
+                            <VisibilityOutlinedIcon style={{
+                                position: 'absolute',
+                                right: '25px',
+                            }} className={"iconStyle"}/>
 
                         </div>
 

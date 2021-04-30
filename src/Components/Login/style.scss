@@ -21,7 +21,6 @@
 .loginStyle input {
   width: 304px;
   height: 48px;
-  //position: initial;
   background: #FFFFFF;
   border: 1px solid #CDE5F6;
   box-sizing: border-box;
@@ -29,10 +28,8 @@
 }
 
 .passStyle input {
-
   width: 304px;
   height: 48px;
-  //position: initial;
   border: 1px solid #CDE5F6;
   box-sizing: border-box;
   border-radius: 4px;
@@ -106,9 +103,11 @@
 .styleExit {
   color: #179879;
 }
-.styleExit:hover{
+
+.styleExit:hover {
   color: white;
 }
+
 .styleWelcome {
   font-size: 22px;
   line-height: 30px;
@@ -132,6 +131,5 @@
 
 * {
   font-family: Noto Sans Armenian;
-
 }
 
