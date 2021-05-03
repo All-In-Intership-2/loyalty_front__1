@@ -1,0 +1,111 @@
+.loginEmail-container {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  letter-spacing: 0.2px;
+  background: #cde5f6;
+
+  .login-error-message {
+    color: #ff0000;
+  }
+
+  .loginEmailForm-content {
+    display: grid;
+    margin: 0 auto;
+    width: 792px;
+    height: 544px;
+    background: #fff;
+    border: 1px solid #cde5f6;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    .loginEmailForm-title {
+      font-size: 18px;
+      line-height: 25px;
+      display: grid;
+      align-items: center;
+      color: #686868;
+    }
+    .phoneMail-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: -30px;
+      font-size: 18px;
+      color: #686868;
+
+      .loginEmailForm-mail {
+        margin-right: 170px;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+        margin-left: 75px;
+      }
+
+      img {
+        padding: 4px;
+      }
+    }
+    .loginEmail-form {
+      display: grid;
+      margin: 1px;
+      .form-group {
+        .form-input {
+          width: 300px;
+          height: 48px;
+          border: 1px solid #cde5f6;
+          box-sizing: border-box;
+          border-radius: 4px;
+          margin: 14px;
+          outline: none;
+          &::placeholder {
+            padding-left: 10px;
+          }
+        }
+      }
+      .form-group2 {
+        margin: 10px 0;
+        .input-message-descr {
+          width: 632px;
+          height: 48px;
+          border: 1px solid #cde5f6;
+          box-sizing: border-box;
+          border-radius: 4px;
+          outline: none;
+          &::placeholder {
+            padding-left: 10px;
+          }
+        }
+        .input-message {
+          width: 632px;
+          height: 112px;
+          border: 1px solid #cde5f6;
+          box-sizing: border-box;
+          border-radius: 4px;
+          outline: none;
+          &::placeholder {
+            padding-left: 10px;
+            font-size: 14px;
+          }
+        }
+      }
+      .form-group-btn {
+        margin: 30px auto;
+        .login-submit-btn {
+          width: 152px;
+          height: 48px;
+          background: #179879;
+          color: #fff;
+          border-radius: 4px;
+          outline: none;
+          font-size: 16px;
+          line-height: 22px;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.loginEmailFail-container {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  letter-spacing: 0.2px;
+  background: #cde5f6;
+
+  .loginEmailFail-containerCenter {
+    display: grid;
+    place-content: center;
+  }
+
+  .loginEmailFail-content {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    width: 384px;
+    height: 332px;
+    background: #fff;
+    border: 1px solid #cde5f6;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    .imgContent {
+      img {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .linkToBack {
+    margin-right: 100px;
+    margin-top: 30px;
+    img {
+      margin-right: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: #686868;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
+  }
+
+  .textP {
+    box-sizing: border-box;
+    padding: 15px;
+
+    color: #686868;
+  }
+}
