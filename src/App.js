@@ -1,9 +1,12 @@
-import React  from "react"
-import LoginPage from "./Components/Login";
-import PasswordRecovery from "./Components/Login/PasswordRecovery";
+import React from "react";
+import Routes from "./feautures/Routes/Routes";
+import { BrowserRouter } from "react-router-dom";
+
 function App() {
   return (
-      <PasswordRecovery/>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
 }
 
